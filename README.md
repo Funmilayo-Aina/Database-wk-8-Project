@@ -1,5 +1,5 @@
 # Database Project
-Database Management System for Farmers Ecosystem (MVP Fish Farming)
+Database Management System for Farmers Ecosystem (MVP-Fish Farming)
 
 ## Use Case: Fish Farmers Ecosystem - Logistics, Payment, and Social Networking Management
 
@@ -24,7 +24,7 @@ The database is designed with a relational model to ensure data integrity, minim
 *   **Product**: Fish products available for sale by farmers. (One-to-Many from Farmers)
 *   **Orders**: Records purchase transactions initiated by buyers.
 *   **OrderItems**: Details the specific products and quantities within each order. (Many-to-Many between Orders and Products)
-*   **Payments**: Manages all payment transactions related to orders. (One-to-Many from Orders)
+*   **Payment**: Manages all payment transactions related to orders. (One-to-Many from Orders)
 *   **Shipments**: Tracks the logistical delivery process of orders. (One-to-One with Orders, One-to-Many from LogisticsProviders)
 *   **Posts**: Enables social media-like communication. (One-to-Many from Users)
 *   **Comments**: Allows users to comment on posts. (One-to-Many from Users, One-to-Many from Posts)
@@ -93,4 +93,4 @@ This file contains the complete MySQL script to set up the database:
     -- DESCRIBE Users; -- Or any other table to see its structure
     -- SELECT * FROM UserRoles; -- To see initial role data
 
-''' This DataBase is set up in preparation for FAST API CRUD APPLICATION'''
+''' This DataBase is set up in preparation for FAST API CRUD APP''
